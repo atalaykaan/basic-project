@@ -12,7 +12,7 @@ public class BankAccount implements ChecksIfIbanExists, Account{
 	
 	BankAccount(String iban, double balance) throws IbanAlreadyExistsException {
 		if(!checkIfIbanExists.test(iban))
-				ibanMap.put(iban, this);
+			ibanMap.put(iban, this);
 		else
 			throw new IbanAlreadyExistsException("An user of this IBAN already exists!\n");
 		this.iban = iban;
