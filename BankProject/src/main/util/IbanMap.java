@@ -3,16 +3,16 @@ package main.util;
 import java.util.HashMap;
 import java.util.Map;
 
-import main.services.Account;
+import main.services.BankAccount;
 
 public class IbanMap {
 	private IbanMap() {
 		
 	}
 	
-	private static Map<String, Account> ibanMap = new HashMap<String, Account>();
+	private static Map<String, BankAccount> ibanMap = new HashMap<String, BankAccount>();
 	
-	public static Map<String, Account> getIbanMap() {
+	static Map<String, BankAccount> getIbanMap() {
 		return ibanMap;
 	}
 	
