@@ -3,10 +3,9 @@ package main.services;
 import main.actions.Action;
 import main.exceptions.*;
 import main.util.ChecksIfIbanExists;
-import main.util.UsesCardMap;
 
 
-public class BankAccount implements ChecksIfIbanExists, UsesCardMap, Account{
+public class BankAccount implements ChecksIfIbanExists, Account{
 	private String iban;
 	private double balance;
 	private ATM occupiedAtm;
